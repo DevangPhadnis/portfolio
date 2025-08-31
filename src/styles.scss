@@ -1,1 +1,97 @@
-/* You can add global styles to this file, and also import other style files */
+:root {
+    --bg: #0a0f1c;
+    --panel: rgba(14, 20, 35, .6);
+    --text: #e8f6ff;
+    --muted: #9bb0c0;
+    --muted-2: #b6c7d6;
+    --neon: #00d4ff;
+}
+
+* {
+    box-sizing: border-box
+}
+
+html,
+body {
+    height: 100%
+}
+
+html {
+    scroll-behavior: smooth
+}
+
+body {
+    margin: 0;
+    font-family: 'Poppins', system-ui, -apple-system, Segoe UI, Roboto, Arial;
+    background: var(--bg);
+    color: var(--text);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+img {
+    max-width: 100%;
+    display: block
+}
+
+.container {
+    width: min(1120px, 92vw);
+    margin-inline: auto
+}
+
+.btn {
+    cursor: pointer;
+    user-select: none;
+    border-radius: 12px;
+    padding: .85rem 1.2rem;
+    font-weight: 600;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    gap: .5rem
+}
+
+.btn--primary {
+    background: var(--neon);
+    color: var(--bg);
+    border: 0
+}
+
+.btn--outline {
+    border: 1px solid var(--neon);
+    color: var(--neon);
+    background: transparent
+}
+
+.btn--outline:hover {
+    background: var(--neon);
+    color: var(--bg)
+}
+
+.btn:focus-visible {
+    outline: 3px solid #6de6ff;
+    outline-offset: 2px
+}
+
+@media (prefers-reduced-motion: reduce) {
+
+    *,
+    *::before,
+    *::after {
+        animation: none !important;
+        transition: none !important
+    }
+}
+
+@supports(padding:max(0px)) {
+    .safe-pad {
+        padding-left: max(16px, env(safe-area-inset-left));
+        padding-right: max(16px, env(safe-area-inset-right))
+    }
+}
+
+@media (max-width:360px) {
+    .btn {
+        width: 100%
+    }
+}
