@@ -30,14 +30,14 @@ export class AppComponent {
       desc: 'Full-stack app: Angular + Spring Boot, Razorpay payments, PDF receipts, S3 video streaming, resume-playback.',
       tech: ['Angular', 'Spring Boot', 'AWS S3', 'Razorpay', 'MySQL'],
       github: 'https://github.com/DevangPhadnis/CoursePurchase#readme',
-      projectUrl: 'http://ec2-3-82-98-7.compute-1.amazonaws.com:4200/login'
+      projectUrl: 'http://ec2-52-7-49-188.compute-1.amazonaws.com:80/login'
     },
     {
       title: 'Employee Management System',
       desc: 'JWT auth, role-based access, CRUD modules, dashboards, email/SMS notifications.',
       tech: ['Angular', 'Spring Boot', 'JWT', 'PrimeNG', 'RDS MySQL'],
       github: 'https://github.com/DevangPhadnis/EmployeeManagement#readme',
-      projectUrl: 'http://ec2-3-82-98-7.compute-1.amazonaws.com:80/login'
+      projectUrl: 'http://ec2-52-7-49-188.compute-1.amazonaws.com:4200/login'
     }
   ];
 
